@@ -1,0 +1,63 @@
+<!-- <html>
+  <body>
+    <div id="someDiv">Hello</div>
+  </body>
+
+  <script>
+  function discogsStuff(fred){
+    console.log(fred.data.results[0].thumb);
+    let myNewImage = document.createElement("img");
+    myNewImage.src = fred.data.results[0].thumb;
+    let theDiv = document.getElementById("someDiv");
+    theDiv.appendChild(myNewImage);
+  }
+  </script>
+   -->
+// I can't do this: It's Cheating! - I'm just using the video from week 9 assignment notes...
+
+<!DOCTYPE html>
+<html>
+  <head>
+   <title>HTML Audio Player</title>
+   <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+    <div id="container">
+      <div id="audio-img">
+        <img class="cover">
+      </div>
+      <div id="audio-player">
+        <div id="audio-info">
+          <span class="artist"></span> - <span class="title"></span>
+        </div>
+        <input> id="volume" type="range" min="0" max="10" value="5">
+        <br>
+        <div id="audio-buttons">
+          <button id="prev"></button>
+          <button id="play"></button>
+          <button id="pause"></button>
+          <button id="stop"></button>
+          <button id="next"></button>
+        </div>
+        <div class="clearfix"></div>
+        <div id="tracker">
+          <div id="progressbar">
+            <span id="progress"></span>
+          </div>
+          <span id="duration"></span>
+        </div>
+        <div class="clearfix"></div>
+        <ul> id="playlist">
+          <li song="Why I Farm.m4a" cover="cover1.jpg" artist="The Henningsens">Why I Farm.m4a</li>
+          <li song="I Hope You Dance.m4a" cover="cover1.jpg" artist="Lee Ann Womack">I Hope You Dance.m4a</li>
+          <li song="Why I Farm.m4a" cover="cover1.jpg" artist="The Henningsens">Why I Farm.m4a</li>
+          <li song="Why I Farm.m4a" cover="cover1.jpg" artist="The Henningsens">Why I Farm.m4a</li>
+          <li song="Why I Farm.m4a" cover="cover1.jpg" artist="The Henningsens">Why I Farm.m4a</li>
+          <li song="Why I Farm.m4a" cover="cover1.jpg" artist="The Henningsens">Why I Farm.m4a</li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
